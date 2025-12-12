@@ -1,0 +1,26 @@
+ProductID,ProductName,Category,Price,Status
+P01,Laptop,Electronics,100,Active
+P02,Smartphone,Electronics,250,Active
+P03,Headphones,Electronics,75,Active
+P04,Coffee Maker,HomeAppliance,150,Active
+P05,Laptop,Electronics,100,Active
+P06,,Furniture,200,Inactive
+P07,Tablet,Electronics,300,Active
+P08,Mouse,Electronics,50,Active
+P09,Monitor,Electronics,120,Active
+P10,TV,Electronics,400,Active
+P11,Desk,Furniture,250,Active
+P12,Chair,Furniture,100,Active
+P13,Vacuum Cleaner,Home Appliance,180,Active
+P14,Blender,HomeAppliance,90,Active
+P15,Keyboard,Electronics,60,Active
+P16,Smartwatch,Electronics,200,Active
+P17,Printer,Electronics,150,Active
+P18,Camera,Electronics,350,Active
+P19,Speaker,Electronics,120,Active
+P20,Microwave,Home Appliance,220,Active
+P21,Air Conditioner,HomeAppliance,500,Inactive
+P22,Iron,Home Appliance,80,Active
+P23,Toaster,HomeAppliance,70,Active
+P24,Projector,Electronics,450,Active
+P25,Router,Electronics,110,Active
