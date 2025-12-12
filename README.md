@@ -33,6 +33,36 @@ FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
+🧭 ETL Workflow Diagram Explanation
+This diagram illustrates the full ETL process (Extract → Transform → Load) used in your data analytics project:
+🔶 1. Extract
+- Source: Raw data comes from three CSV files:
+- FactSales.csv – sales transactions
+- DimCustomer.csv – customer information
+- DimProduct.csv – product catalog
+- These files contain messy, real-world data with nulls, duplicates, and inconsistent formats.
+🟣 2. Transform
+- Tool: SQL scripts are used to clean and prepare the data.
+- Key transformations include:
+- Standardizing date formats (e.g., converting 2025/01/07 to 2025-01-07)
+- Handling missing values (e.g., filling null discounts with 0)
+- Removing duplicate records (especially in customer and product tables)
+- Recalculating TotalAmount using the formula:
+Quantity × UnitPrice × (1 - Discount)
+🔵 3. Load
+- Target: Cleaned data is loaded into new SQL tables:
+- FactSales_Clean
+- DimCustomer_Clean
+- DimProduct_Clean
+- These tables are now ready for analysis, reporting, and dashboarding.
+⭐ 4. Data Modeling & BI
+- The cleaned tables form a Star Schema:
+- FactSales_Clean is the central fact table.
+- DimCustomer_Clean and DimProduct_Clean are dimension tables.
+- This structure supports powerful queries and can be connected to BI tools like Power BI or Tableau for visual insights.
+
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/e9ac01ca-0872-4f70-ac7a-aff216286836" />
+
 
 ## 📌 Conclusions and Project Results
 
