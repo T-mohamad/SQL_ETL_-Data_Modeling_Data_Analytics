@@ -33,6 +33,7 @@ FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
+
 ## 📌 Conclusions and Project Results
 
 Through this project, we successfully demonstrated a complete ETL workflow on a small star schema.  
@@ -44,7 +45,12 @@ Key outcomes include:
 - **Scalable Framework**: The scripts and schema design can be extended with additional dimensions (e.g., Time, Store) to support more advanced analytics and BI dashboards.  
 - **Learning Value**: The project provided hands-on practice in SQL-based ETL, data modeling, and quality assurance, building a strong foundation for professional data analysis work.
 
-Overall, the project demonstrates how structured ETL and data modeling transform raw, inconsistent data into a clean, reliable dataset ready for reporting and decision-making.## 🔮 Future Work
+Overall, the project demonstrates how structured ETL and data modeling transform raw, inconsistent data into a clean, reliable dataset ready for reporting and decision-making.
+
+
+
+
+## 🔮 Future Work
 
 While the current project demonstrates a complete ETL workflow and a functional star schema, there are several opportunities to extend and enhance the model:
 
@@ -56,7 +62,11 @@ While the current project demonstrates a complete ETL workflow and a functional 
 - **Expand Dataset**: Add more fact tables (e.g., FactReturns, FactInventory) to broaden analytical capabilities.  
 - **Snowflake Schema Exploration**: Normalize dimensions further (e.g., splitting Customer into Contact and Location tables) to practice snowflake modeling.
 
-These extensions will make the project more realistic, scalable, and closer to enterprise-level data warehouse design.## 🛠️ Tools Used
+These extensions will make the project more realistic, scalable, and closer to enterprise-level data warehouse design.
+
+
+
+## 🛠️ Tools Used
 
 This project was built and tested using the following tools and technologies:
 
