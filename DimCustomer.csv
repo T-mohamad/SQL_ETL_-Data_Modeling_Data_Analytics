@@ -1,0 +1,23 @@
+CustomerID,Name,Email,Phone,Country
+C001,Ali Ahmad,ali.ahmad@gmail.com,963-999-111,Syria
+C002,Sara Haddad,sara.haddad@yahoo.com,0999111222,SY
+C003,John Smith,john.smith@gmail.com,,USA
+C004,Ahmad Ali,ahmad.ali@gmail.com,963-888-222,Syria
+C005,Sara Haddad,sara.haddad@yahoo.com,0999111222,Syria
+C006,Maria Lopez,maria.lopez@hotmail.com,001-555-333,US
+C007,Omar Khaled,omar.khaled@gmail.com,963-777-444,SY
+C008,Linda Brown,linda.brown@gmail.com,0044-222-555,UK
+C009,Chen Wei,chen.wei@gmail.com,0086-123-456,China
+C010,David Miller,david.miller@yahoo.com,,USA
+C011,Ali Ahmad,ali.ahmad@gmail.com,963-999-111,SY
+C012,Samir Hassan,samir.hassan@gmail.com,963-555-666,Syria
+C013,Noura Ali,noura.ali@hotmail.com,963-444-777,SY
+C014,George White,george.white@gmail.com,001-555-888,US
+C015,Emily Clark,emily.clark@gmail.com,0044-333-999,UK
+C016,Ahmad Ali,ahmad.ali@gmail.com,963-888-222,Syria
+C017,John Smith,john.smith@gmail.com,001-555-000,USA
+C018,Linda Brown,linda.brown@gmail.com,0044-222-555,United Kingdom
+C019,Omar Khaled,omar.khaled@gmail.com,963-777-444,Syria
+C020,Chen Wei,chen.wei@gmail.com,0086-123-456,China
+C021,Sara Haddad,sara.haddad@yahoo.com,0999111222,Syria
+C022,David Miller,david.miller@yahoo.com,001-555-222,US
