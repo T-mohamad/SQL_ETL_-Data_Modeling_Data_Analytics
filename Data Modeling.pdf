@@ -1,0 +1,78 @@
+# Data Modeling Explanation with Schema Diagram
+
+## 1. What is Data Modeling?
+Data modeling is the process of designing the structure of your data so that it can be stored, queried, and analyzed efficiently. In analytics,
+we often use **Star Schema** or **Snowflake Schema** to organize data.
+
+- **Fact Table** → contains measurable, quantitative data (e.g., sales, revenue, quantity).
+- **Dimension Tables** → contain descriptive attributes (e.g., customer info, product details) that provide context to the facts.
+
+---
+
+## 2. Our Example Schema
+We created:
+- **FactSales** → sales transactions
+- **DimCustomer** → customer information
+- **DimProduct** → product catalog
+
+### Relationships
+- `FactSales.CustomerID` → references `DimCustomer.CustomerID`
+- `FactSales.ProductID` → references `DimProduct.ProductID`
+
+---
+
+## 3. Schema Diagram (Star Schema)
+                +------------------+
+                |   DimCustomer    |
+                |------------------|
+                | CustomerID (PK)  |
+                | Name             |
+                | Email            |
+                | Phone            |
+                | Country          |
+                +------------------+
+                       |
+                       | (FK)
+                       |
++------------------+    |     +------------------+
+|   FactSales      |----+-----|   DimProduct     |
+|------------------|          |------------------|
+| SaleID (PK)      |          | ProductID (PK)   |
+| CustomerID (FK)  |          | ProductName      |
+| ProductID (FK)   |          | Category         |
+| SaleDate         |          | Price            |
+| Quantity         |          | Status           |
+| UnitPrice        |          +------------------+
+| Discount         |
+| TotalAmount      |
++------------------+
+
+---
+
+## 4. Why This Model Works
+- **FactSales** is the central table with numeric measures.
+- **DimCustomer** and **DimProduct** provide descriptive context.
+- Queries can join facts with dimensions to answer business questions:
+  - *Which customers spent the most?*
+  - *Which products generated the highest revenue?*
+  - *Sales trends by country or category.*
+
+---
+
+## 5. Example Queries
+
+### Total Sales by Country
+```sql
+SELECT c.Country, SUM(f.TotalAmount) AS TotalSales
+FROM FactSales f
+JOIN DimCustomer c ON f.CustomerID = c.CustomerID
+GROUP BY c.Country;
+
+
+Top 5 Products by Revenue
+SELECT p.ProductName, SUM(f.TotalAmount) AS Revenue
+FROM FactSales f
+JOIN DimProduct p ON f.ProductID = p.ProductID
+GROUP BY p.ProductName
+ORDER BY Revenue DESC
+LIMIT 5;
