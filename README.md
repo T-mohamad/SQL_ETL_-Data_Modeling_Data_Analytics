@@ -44,14 +44,17 @@ This diagram illustrates the Star Schema used in your project. It shows how the 
 - `DataModeling.md` → Documentation explaining schema design and queries.
 
 ---
-🧭 ETL Workflow Diagram Explanation
+🧭 ETL Workflow Diagram Explanation:
+
 This diagram illustrates the full ETL process (Extract → Transform → Load) used in your data analytics project:
+
 ###🔶 1. Extract
 - Source: Raw data comes from three CSV files:
 - FactSales.csv – sales transactions
 - DimCustomer.csv – customer information
 - DimProduct.csv – product catalog
 - These files contain messy, real-world data with nulls, duplicates, and inconsistent formats.
+- 
 🟣 2. Transform
 - Tool: SQL scripts are used to clean and prepare the data.
 - Key transformations include:
@@ -60,12 +63,14 @@ This diagram illustrates the full ETL process (Extract → Transform → Load) u
 - Removing duplicate records (especially in customer and product tables)
 - Recalculating TotalAmount using the formula:
 Quantity × UnitPrice × (1 - Discount)
+
 🔵 3. Load
 - Target: Cleaned data is loaded into new SQL tables:
 - FactSales_Clean
 - DimCustomer_Clean
 - DimProduct_Clean
 - These tables are now ready for analysis, reporting, and dashboarding.
+- 
 ⭐ 4. Data Modeling & BI
 - The cleaned tables form a Star Schema:
 - FactSales_Clean is the central fact table.
