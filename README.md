@@ -84,8 +84,8 @@ Quantity × UnitPrice × (1 - Discount)
 - DimCustomer_Clean and DimProduct_Clean are dimension tables.
 - This structure supports powerful queries and can be connected to BI tools like Power BI or Tableau for visual insights.
 
-Workflow diagram sho.png
-https://github.com/T-mohamad/SQL_ETL_-Data_Modeling_Data_Analytics/blob/main/Workflow%20diagram%20sho.png
+
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/4eaf06a8-3e4e-4775-bc65-3af47d3dbded" />
 
 ## 📌 Conclusions and Project Results
 
