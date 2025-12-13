@@ -1,6 +1,8 @@
 # Data Analytics ETL Project
 
+
 ## 📌 Project Overview
+
 This project demonstrates a complete **ETL workflow** (Extract, Transform, Load) using a small star schema model.  
 It includes:
 - **FactSales** → Sales transactions (fact table).
@@ -11,23 +13,33 @@ The dataset contains **intentional data quality issues** (nulls, duplicates, inc
 
 
 This diagram illustrates the Star Schema used in your project. It shows how the tables are connected through foreign key relationships:
+
 🟨 Central Fact Table: FactSales_Clean
+
 - Contains transactional data: sales, quantities, prices, discounts, and totals.
 - Has two foreign keys:
 - CustomerID → links to DimCustomer.CustomerID
 - ProductID → links to DimProduct_Clean.ProductID
+  
 🟫 Dimension Table: DimCustomer
+
 - Stores customer attributes: name, email, phone, country.
 - CustomerID is the primary key.
+  
 🟧 Dimension Table: DimProduct_Clean
+
 - Stores product attributes: name, category, status.
 - ProductID is the primary key.
+  
 🔗 Relationships
+
 - Arrows show how FactSales_Clean connects to both dimension tables.
 - This structure supports efficient analytical queries like:
 - Total sales by country
 - Top products by revenue
 - Customer segmentation by spending
+
+
 
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/10aa480b-dda2-49df-96db-081b47eed4f7" />
 
