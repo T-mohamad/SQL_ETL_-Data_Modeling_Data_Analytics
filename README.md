@@ -11,6 +11,8 @@ It includes:
 
 The dataset contains **intentional data quality issues** (nulls, duplicates, inconsistent formats) to practice cleansing with SQL.
 
+<img width="1536" height="1536" alt="image" src="https://github.com/user-attachments/assets/d8aa82b0-4d48-4c91-b01f-2c88f87aa551" />
+
 
 This diagram illustrates the Star Schema used in your project. It shows how the tables are connected through foreign key relationships:
 
