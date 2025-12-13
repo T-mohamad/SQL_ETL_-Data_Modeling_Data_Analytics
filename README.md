@@ -44,21 +44,9 @@ This diagram illustrates the Star Schema used in your project. It shows how the 
 - `DataModeling.md` → Documentation explaining schema design and queries.
 
 ---
-
-## 🛠️ ETL Workflow
-
-### 1. Extract
-Load CSV files into your SQL database:
-```sql
-LOAD DATA INFILE 'FactSales.csv'
-INTO TABLE FactSales
-FIELDS TERMINATED BY ','
-LINES TERMINATED BY '\n'
-IGNORE 1 ROWS;
-
 🧭 ETL Workflow Diagram Explanation
 This diagram illustrates the full ETL process (Extract → Transform → Load) used in your data analytics project:
-🔶 1. Extract
+###🔶 1. Extract
 - Source: Raw data comes from three CSV files:
 - FactSales.csv – sales transactions
 - DimCustomer.csv – customer information
@@ -86,6 +74,9 @@ Quantity × UnitPrice × (1 - Discount)
 
 
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/4eaf06a8-3e4e-4775-bc65-3af47d3dbded" />
+
+
+
 
 ## 📌 Conclusions and Project Results
 
